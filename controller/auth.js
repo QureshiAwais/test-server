@@ -8,7 +8,7 @@ router.post("/login",(req,res)=>{
         var token=jwt.sign(req.body,'my-token')
         res.status(200).send({token})
     }else{
-        res.status(200).send({message:"Please check entered uid or password"})
+        res.status(200).send({message:"Please check entered uid or password. uid & pwd is Awais"})
     }
 })
 module.exports=router;
